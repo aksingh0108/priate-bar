@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Color Variables */
+:root {
+    --primary-color: #ff6600; /* Orange */
+    --secondary-color: #000000; /* Black */
+    --background-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark Gray for text */
+    --hover-color: #e65a00; /* Slightly darker orange for hover effects */
+  }
+  
+  /* Apply Global Colors */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  a {
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--hover-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  

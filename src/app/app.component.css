@@ -1,0 +1,23 @@
+/* Example for a component CSS file */
+.container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .header {
+    color: var(--primary-color);
+  }
+  
+  .footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+  
+  .card {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+  

@@ -1,0 +1,48 @@
+<section>
+<header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="home" class="logo">
+        <img src="pirate-logo.png" alt="Pirate Bar Logo" />
+        <span>Pirate Bar</span>
+      </a>
+  
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#whats-on">What's On</a></li>
+          <li><a href="#functions">Functions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Hamburger Menu -->
+       @if(open){
+        <div class="hamburger-menu" style="padding-right: 5rem;" (click)="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+       }
+       @if(isMenuOpen){
+        <div class="hamburger-menu" style="padding-right: 5rem; "  (click)="onClose()"> 
+          close
+        </div>
+       }
+     
+    </div>
+  
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav-menu" [ngClass]="{ 'open': isMenuOpen }">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#whats-on">What's On</a></li>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</section>

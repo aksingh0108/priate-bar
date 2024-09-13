@@ -1,0 +1,25 @@
+<section id="functions" class="functions-section">
+  <div class="functions-container">
+    <h2 class="functions-title">Plan Your Next Event with Us!</h2>
+    <p class="functions-description">
+      Whether it's a birthday, corporate gathering, or any private event, we have the perfect package for you.
+    </p>
+
+    <div class="package-grid">
+      <div *ngFor="let package of packages" class="package-card">
+        <img [src]="package.image" [alt]="package.title" class="package-image">
+        <div class="package-details">
+          <h3>{{ package.title }}</h3>
+          <p>{{ package.description }}</p>
+          <p class="package-price">Starting at {{ package.price | currency }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-section">
+      <h3>Ready to Host Your Event?</h3>
+      <p>Contact us to reserve your space today.</p>
+      <button class="booking-button">Book Now</button>
+    </div>
+  </div>
+</section>

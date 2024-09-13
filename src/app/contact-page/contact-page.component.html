@@ -1,0 +1,57 @@
+<section  id="contact" class="contact-section">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <h2>Contact Us</h2>
+      <form class="contact-form" (submit)="onSubmit($event)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+  
+      <!-- Opening Hours and Contact Details -->
+      <div class="contact-info">
+        <h3>Our Details</h3>
+        <p><strong>Opening Hours:</strong> Monday - Sunday: 12 PM - 11 PM</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> contact&#64;piratebar.com</p>
+  
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.4157591409497!2d115.82954317572634!3d-31.91888478124425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a5aa7f49cc85%3A0x504f0b535df4e0!2sMount%20Hawthorn%2C%20WA%206017%2C%20Australia!5e0!3m2!1sen!2sau!4v1694582169435!5m2!1sen!2sau"             width="100%"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <a class="primary-color" href="https://www.facebook.com/piratebar" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="primary-color " href="https://www.instagram.com/piratebar" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <p>&copy; 2024 Pirate Bar. All rights reserved.</p>
+    </footer>
+  </section>
+  

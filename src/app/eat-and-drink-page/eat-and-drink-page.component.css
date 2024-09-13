@@ -1,0 +1,138 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+  }
+  
+  .menu-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .menu-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Pirata One', cursive;
+  }
+  
+  .menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .menu-tab {
+    padding: 15px 30px;
+    background-color: #f90;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu-tab:hover,
+  .menu-tab.active {
+    background-color: #d87b00;
+    transform: scale(1.05);
+  }
+  
+  .menu-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .menu-price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  .animated {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-title {
+      font-size: 2rem;
+    }
+  
+    .menu-items {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-tabs {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-tab {
+      width: 100%;
+    }
+  }
+  

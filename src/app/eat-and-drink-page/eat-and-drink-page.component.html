@@ -1,0 +1,29 @@
+<section id="menu" class="menu-section">
+    <div class="menu-container">
+      <h2 class="menu-title">Eat & Drink</h2>
+  
+      <div class="menu-tabs">
+        <button class="menu-tab" [class.active]="activeTab === 'barMenu'" (click)="selectTab('barMenu')">All-Day Bar Menu</button>
+        <button class="menu-tab" [class.active]="activeTab === 'dinnerMenu'" (click)="selectTab('dinnerMenu')">Dinner Menu (5 PM - 10 PM)</button>
+      </div>
+  
+      <div class="menu-content">
+        <div *ngIf="activeTab === 'barMenu'" class="menu-items animated">
+          <div *ngFor="let item of barMenu" class="menu-item">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <span class="menu-price">{{ item.price | currency }}</span>
+          </div>
+        </div>
+  
+        <div *ngIf="activeTab === 'dinnerMenu'" class="menu-items animated">
+          <div *ngFor="let item of dinnerMenu" class="menu-item">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <span class="menu-price">{{ item.price | currency }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
